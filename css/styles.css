@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito';
+}
+
+header {
+    background-color: #000046;
+}
+
+header a img{
+    display: block;
+    margin: 0 auto;
+    width: 230px;
+}
+
+.navbar a{
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: #000046;
+    
+}
+
+.navbar-toggler {
+    background-color: white;
+    color: #000046;
+}
+
+#carouselExampleIndicators {
+        width: 80%;
+        padding: 10px;
+}
+
+.carousel-item img {
+        height: 150px;
+}
+
+
+@media (min-width: 768px) {
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+@media (min-width: 992px) {
+    #carouselExampleIndicators {
+        width: 70%;
+}
+
+    .carousel-item img {
+        height: 450px;
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+.card {
+    border: solid 10px #000046;
+    margin-top: 10px;
+    width: 220px;
+    position: relative;
+}
+
+.card img {
+    width: 200px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-body {
+    background-color: #000046;
+}
+
+.card-body p {
+    color: white;
+}
+
+.cMessage1 {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    background-color: #20bde8;
+}
+
+.cMessage2 {
+    position: absolute;
+    top: 12%;
+    right: 10%;
+    background-color: #20bde8;
+}
+
+@media (min-width: 768px) {
+    .pNuevos {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 350px 350px;
+        justify-content: center;        
+    }
+
+    .ofertas {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 350px 350px;
+        justify-content: center;        
+    }
+
+    .card {
+        width: 260px;
+    }
+
+    .card img {
+        width: 235px;
+        height: 180px;
+    }
+
+    .card-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pNuevos {
+        display: grid;
+        grid-template-areas: 
+        "card card card card";
+        grid-template-rows: 1fr;
+        grid-template-columns: 300px 300px 300px 300px;
+    }
+
+    .ofertas {
+        display: grid;
+        grid-template-areas: 
+        "card card card card";
+        grid-template-rows: 1fr;
+        grid-template-columns: 300px 300px 300px 300px;
+    }
+
+
+    .pNuevos {
+        grid-area: card;
+    }
+
+    .ofertas {
+        grid-area: card;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+}
+
+a:hover {
+    color: white !important;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.pcEntrada .card {
+    width: 400px;
+}
+
+.pcEntrada img{
+    width: 200px;
+    height: 200px;
+}
+
+@media (min-width: 768px) {
+    .pcEntrada img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.galeria img {
+    width: 330px;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+@media (min-width: 1200px){ 
+    .galeria {
+        display: grid;
+        grid-template-areas: 
+        "img img img"
+        "img img img";
+        row-gap: 35px;
+        justify-items: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .galeria img{
+        width: 400px;
+        height: 216px;
+    }
+}
