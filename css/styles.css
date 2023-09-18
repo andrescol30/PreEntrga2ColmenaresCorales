@@ -172,7 +172,7 @@ a:hover {
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .pcEntrada .card {
-    width: 400px;
+    width: 300px;
 }
 
 .pcEntrada img{
@@ -181,6 +181,11 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+    
+    .pcEntrada .card {
+        width: 400px;
+    }
+
     .pcEntrada img {
         width: 300px;
         height: 300px;
